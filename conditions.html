@@ -102,6 +102,49 @@ if (isNaN(year) || year <= 0) {
         alert(year + " is not a leap year.");
     }
 }*/
+
+//  let number = prompt("Enter a five digit number:");
+
+//         if (number.length !== 5 || isNaN(number) ) {
+//             alert("Invalid");
+//         } else {
+//             let digit1 = Math.floor(number / 10000);        
+//             let digit2 = Math.floor((number / 1000) % 10); 
+//             let digit4 = Math.floor((number / 10) % 10); 
+//             let digit5 = number % 10;      
+//             if (digit1 === digit5 && digit2 === digit4) {
+//                 alert(`${number} is a palindrome.`);
+//             } else {
+//                 alert(`${number} is not a palindrome.`);
+//             }
+//         }
+
+
+const eurRate = 0.93;
+const uahRate = 0.93;
+const aznRate = 0.93;
+let USD = prompt ("Enter the amount of USD:");
+USD = perseFloat(usd);
+if (isNav(USD)||USD<0)
+{
+    alert("invalid");
+}
+else{
+    let currency = prompt("Which currency: (1) EUR, (2)UAH, (3)AZN:")
+}
+switch (currency) {
+                case 1:
+                    alert(USD*eurRate)
+                    break;
+                case 2:
+                alert(USD*uahRate)
+                    break;
+                case 3:
+                alert(USD*aznRate)
+                    break;
+                default:
+                   alert("Invalid");
+}
     </script>
   
 </body>
