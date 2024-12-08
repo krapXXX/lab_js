@@ -10,18 +10,21 @@
 <body>
     <script>
 
+        // Task 1
         let name = prompt("What is your name?");
         alert("Hey, " + name + "!");
 
 
-        /* degi currentYear = 2024;
+        /* Task 2
+         degi currentYear = 2024;
          let birthYear = prompt("Your birthday:");
          let age = currentYear - birthYear;
          alert("you are " + age + " years old!");
          */
 
 
-        /*let side = prompt("Enter the side:");
+        /* Task 3
+        let side = prompt("Enter the side:");
         side = parseFloat(side); 
         if (!isNaN(side)) { 
             let perimeter = 4 * side;
@@ -30,7 +33,8 @@
             alert("Invalid");
         } */
 
-        /*let radius = prompt("Enter the radius:");
+        /* Task 4
+        let radius = prompt("Enter the radius:");
         radius = parseFloat(radius); 
         if (!isNaN(radius) && radius > 0) { 
             let area = Math.PI * Math.pow(radius, 2);
@@ -40,8 +44,9 @@
         }*/
 
 
-        /* let distance = prompt("The distane: ");
-         let time = prompt("Enter the time in hours:")
+        /* Task 5
+         let distance = prompt("The distane: ");
+         let time = prompt("Enter the time in hours:") 
              distance = parseFloat(distance);
              time = parseFloat(time);
      
@@ -55,62 +60,70 @@
                  alert("Invalid");
              }*/
 
-        /*const exchange = 0.93;
-             let dollars = prompt("Enter the amount in dollars:");
-          dollars = parseFloat(dollars); 
-           if (!isNaN(dollars) && dollars > 0) 
-         {
-      let euros = dollars * exchange; 
-        alert(`${dollars} USD is approximately ${euros.toFixed(2)} EUR.`);
+        /* Task 6
+        const exchange = 0.93;
+        let dollars = prompt("Enter the amount in dollars:");
+        dollars = parseFloat(dollars); 
+        if (!isNaN(dollars) && dollars > 0) 
+        {
+            let euros = dollars * exchange; 
+            alert(`${dollars} USD is approximately ${euros.toFixed(2)} EUR.`);
         } else {
-           alert("Invalid");
-           }*/
+            alert("Invalid");
+        }*/
 
-        /*let driveGB = prompt("Enter the flash drive size in GB:");
-                driveGB = parseFloat(driveGB); 
+
+        /* Task 7
+        let driveGB = prompt("Enter the flash drive size in GB:");
+        driveGB = parseFloat(driveGB); 
         
-                const fileMB = 820; 
-                const gbToMb = 1024; 
+        const fileMB = 820; 
+        const gbToMb = 1024; 
         
-                if (!isNaN(driveGB) && driveGB > 0) {
-                    let totalMB = driveGB * gbToMb; 
-                    let fileCount = Math.floor(totalMB / fileMB); 
-                    alert(`A flash drive of ${driveGB} GB can hold approximately ${fileCount} files of ${fileMB} MB each.`);
-                } else {
-                    alert("Invalid");
-                }*/
-
-        /* let moneyAmount = prompt("Enter the amount of money you have:");
-         let chocolatePrice = prompt("Enter the price of one chocolate:");
- 
-         moneyAmount = parseFloat(moneyAmount);
-         chocolatePrice = parseFloat(chocolatePrice);
- 
-         if (!isNaN(moneyAmount) && moneyAmount > 0 && !isNaN(chocolatePrice) && chocolatePrice > 0) {
-             let chocolateCount = Math.floor(moneyAmount / chocolatePrice); 
-             let change = moneyAmount - (chocolateCount * chocolatePrice); 
-             alert(`You can buy ${chocolateCount} chocolate bars and your change will be ${change.toFixed(2)}.`);
-         } else {
-             alert("Invalid");
-         }*/
+        if (!isNaN(driveGB) && driveGB > 0) {
+            let totalMB = driveGB * gbToMb; 
+            let fileCount = Math.floor(totalMB / fileMB); 
+            alert(`A flash drive of ${driveGB} GB can hold approximately ${fileCount} files of ${fileMB} MB each.`);
+        } else {
+            alert("Invalid");
+        }*/
 
 
-        /* let number = prompt("Enter a three-digit number:");
+        /* Task 8
+        let moneyAmount = prompt("Enter the amount of money you have:");
+        let chocolatePrice = prompt("Enter the price of one chocolate:");
  
-         number = parseInt(number);
+        moneyAmount = parseFloat(moneyAmount);
+        chocolatePrice = parseFloat(chocolatePrice);
  
-         if (!isNaN(number) && number >= 100 && number <= 999) {
-             let hundreds = Math.floor(number / 100); 
-             let tens = Math.floor((number % 100) / 10);
-             let ones = number % 10; 
- 
-             let reversedNumber = (ones * 100) + (tens * 10) + hundreds; 
-             alert(`The reversed number is: ${reversedNumber}`);
-         } else {
-             alert("Invalid");
-         }*/
+        if (!isNaN(moneyAmount) && moneyAmount > 0 && !isNaN(chocolatePrice) && chocolatePrice > 0) {
+            let chocolateCount = Math.floor(moneyAmount / chocolatePrice); 
+            let change = moneyAmount - (chocolateCount * chocolatePrice); 
+            alert(`You can buy ${chocolateCount} chocolate bars and your change will be ${change.toFixed(2)}.`);
+        } else {
+            alert("Invalid");
+        }*/
 
-        /*let number = prompt("Enter a number:");
+
+        /* Task 9
+        let number = prompt("Enter a three-digit number:");
+ 
+        number = parseInt(number);
+ 
+        if (!isNaN(number) && number >= 100 && number <= 999) {
+            let hundreds = Math.floor(number / 100); 
+            let tens = Math.floor((number % 100) / 10);
+            let ones = number % 10; 
+ 
+            let reversedNumber = (ones * 100) + (tens * 10) + hundreds; 
+            alert(`The reversed number is: ${reversedNumber}`);
+        } else {
+            alert("Invalid");
+        }*/
+
+
+        /* Task 10
+        let number = prompt("Enter a number:");
         number = parseInt(number);
         if (isNaN(number)) {
             alert("Invalid");

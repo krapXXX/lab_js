@@ -1,40 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
-       /* let age = prompt("What is your age: ");
-        age = parseInt(age);
-    
-        if (isNaN(age) || age < 0) {
-            alert("Invalid ");
-        } else {
-            switch (true) {
-                case age >= 0 && age <= 2:
-                    alert("You are a baby.");
-                    break;
-                case age >= 3 && age <= 11:
-                    alert("You are a child.");
-                    break;
-                case age >= 12 && age <= 18:
-                    alert("You are a teenager.");
-                    break;
-                case age > 18 && age <= 60:
-                    alert("You are an adult.");
-                    break;
-                case age > 60: 
-                    alert("You are an elder.");
-                    break;
-                default:
-                    alert("Invalid age category.");
-            }
-        }*/
+        /* Task 1
+        let age = prompt("What is your age: ");
+         age = parseInt(age);
+     
+         if (isNaN(age) || age < 0) {
+             alert("Invalid ");
+         } else {
+             switch (true) {
+                 case age >= 0 && age <= 2:
+                     alert("You are a baby.");
+                     break;
+                 case age >= 3 && age <= 11:
+                     alert("You are a child.");
+                     break;
+                 case age >= 12 && age <= 18:
+                     alert("You are a teenager.");
+                     break;
+                 case age > 18 && age <= 60:
+                     alert("You are an adult.");
+                     break;
+                 case age > 60: 
+                     alert("You are an elder.");
+                     break;
+                 default:
+                     alert("Invalid age category.");
+             }
+         }*/
 
-        /*let number = prompt("Enter a number from 0 to 9:");
+        /* Task 2
+        let number = prompt("Enter a number from 0 to 9:");
         number = parseInt(number);
 
         if (isNaN(number) || number < 0 || number > 9) {
@@ -78,74 +82,147 @@
             alert(`The special symbol for ${number} is "${symbol}".`);
         }*/
 
-       /* let number = prompt("Enter a three-digit number:");
-if (number.length !== 3 || isNaN(number)) {
-    alert("Invalid");
-} else {
-    let digit1 = number[0];
-    let digit2 = number[1];
-    let digit3 = number[2];
-    if (digit1 === digit2 || digit1 === digit3 || digit2 === digit3) {
-        alert("Duplicate digits.");
-    } else {
-        alert("No duplicate digits.");
-  */
+        /* Task 3
+        let number = prompt("Enter a three-digit number:");
+         if (number.length !== 3 || isNaN(number)) {
+             alert("Invalid");
+         } else {
+             let digit1 = number[0];
+             let digit2 = number[1];
+             let digit3 = number[2];
+             if (digit1 === digit2 || digit1 === digit3 || digit2 === digit3) {
+                 alert("Duplicate digits.");
+             } else {
+                 alert("No duplicate digits.");
+             }
+         }*/
 
-  /*let year = prompt("Enter a year:");
-year = parseInt(year);
-if (isNaN(year) || year <= 0) {
-    alert("Invalid");
-} else {
-    if ((year % 400 === 0) || (year % 4 === 0 && year % 100 !== 0)) {
-        alert(year + " is a leap year.");
-    } else {
-        alert(year + " is not a leap year.");
-    }
-}*/
+        /* Task 4
+        let year = prompt("Enter a year:");
+          year = parseInt(year);
+          if (isNaN(year) || year <= 0) {
+              alert("Invalid");
+          } else {
+              if ((year % 400 === 0) || (year % 4 === 0 && year % 100 !== 0)) {
+                  alert(year + " is a leap year.");
+              } else {
+                  alert(year + " is not a leap year.");
+              }
+          }*/
 
-//  let number = prompt("Enter a five digit number:");
+        /* Task 5
+        let number = prompt("Enter a five digit number:");
+          if (number.length !== 5 || isNaN(number)) {
+              alert("Invalid");
+          } else {
+              let digit1 = Math.floor(number / 10000);        
+              let digit2 = Math.floor((number / 1000) % 10); 
+              let digit4 = Math.floor((number / 10) % 10); 
+              let digit5 = number % 10;      
+              if (digit1 === digit5 && digit2 === digit4) {
+                  alert(`${number} is a palindrome.`);
+              } else {
+                  alert(`${number} is not a palindrome.`);
+              }
+          }*/
 
-//         if (number.length !== 5 || isNaN(number) ) {
-//             alert("Invalid");
-//         } else {
-//             let digit1 = Math.floor(number / 10000);        
-//             let digit2 = Math.floor((number / 1000) % 10); 
-//             let digit4 = Math.floor((number / 10) % 10); 
-//             let digit5 = number % 10;      
-//             if (digit1 === digit5 && digit2 === digit4) {
-//                 alert(`${number} is a palindrome.`);
-//             } else {
-//                 alert(`${number} is not a palindrome.`);
-//             }
-//         }
-
-
-const eurRate = 0.93;
-const uahRate = 0.93;
-const aznRate = 0.93;
-let USD = prompt ("Enter the amount of USD:");
-USD = perseFloat(usd);
-if (isNav(USD)||USD<0)
-{
-    alert("invalid");
-}
-else{
-    let currency = prompt("Which currency: (1) EUR, (2)UAH, (3)AZN:")
-}
-switch (currency) {
-                case 1:
-                    alert(USD*eurRate)
+        /* Task 6
+        const eurRate = 0.93;
+        const uahRate = 0.93;
+        const aznRate = 0.93;
+        let USD = prompt ("Enter the amount of USD:");
+        USD = parseFloat(USD);
+        if (isNaN(USD) || USD < 0) {
+            alert("Invalid");
+        } else {
+            let currency = prompt("Which currency: (1) EUR, (2) UAH, (3) AZN:");
+            switch (currency) {
+                case "1":
+                    alert(USD * eurRate);
                     break;
-                case 2:
-                alert(USD*uahRate)
+                case "2":
+                    alert(USD * uahRate);
                     break;
-                case 3:
-                alert(USD*aznRate)
+                case "3":
+                    alert(USD * aznRate);
                     break;
                 default:
-                   alert("Invalid");
-}
+                    alert("Invalid");
+            }
+        }*/
+        /*Task7*/
+        // let purchase = prompt("Enter the price");
+        // purchase = parseFloat(purchase);
+
+        // let discount = 0;
+        // if (purchase >= 200 && purchase < 300) {
+        //     discount = 3;
+        // } else if (purchase >= 300 && purchase < 500) {
+        //     discount = 5;
+        // } else if (purchase >= 500) {
+        //     discount = 7;
+        // }
+
+        // let discountAmount = (purchase * discount) / 100;
+        // let finalAmount = purchase - discountAmount;
+
+        // alert(`Your discount: ${discount}%`);
+        // alert(`Price after discount: ${finalAmount}`);
+
+
+        /*Task8*/
+        //  let circle = prompt("Enter the circle length:");
+        //  circle = parseFloat(circle);
+        // let perimeter = prompt("Enter the square's perimeter:");
+        // perimeter=parseFloat(perimeter);
+        // let diameter = circle / Math.PI;
+        // let side = perimeter / 4;
+
+        // if (diameter <= side) {
+        //     alert("The circle can fit inside the square.");
+        // } else {
+        //     alert("The circle cannot fit inside the square.");
+        // }
+
+        /*Task9*/
+        // let score = 0;
+        // let question1 = prompt("What is the capital of Ukraine?\n1) Lviv\n2) Kyiv\n3) Kharkiv", "Enter the number of your answer:");
+        // if (question1 === "2") {
+        //     score += 2;
+        // }
+        // let question2 = prompt("How many planets are there in the Solar System?\n1) 8\n2) 9\n3) 7", "Enter the number of your answer:");
+        // if (question2 === "1") {
+        //     score += 2;
+        // }
+        // let question3 = prompt("Who wrote 'Kobzar'?\n1) Ivan Franko\n2) Lesya Ukrainka\n3) Taras Shevchenko", "Enter the number of your answer:");
+        // if (question3 === "3") {
+        //     score += 2;
+        // }
+        // alert(`You scored ${score} points`);
+
+        /*Task10*/
+        let day = prompt("Enter the day (1-31):");
+        day = parseInt(day);
+        let month = prompt("Enter the month (1-12):");
+        month = parseInt(month);
+        let year = prompt("Enter the year:");
+        year = parseInt(year);
+
+        const daysInMonth = [31, (year % 4 === 0 && (year % 100 !== 0 || year % 400 === 0)) ? 29 : 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+
+        day++;
+        if (day > daysInMonth[month - 1]) {
+            day = 1;
+            month++;
+            if (month > 12) {
+                month = 1;
+                year++;
+            }
+        }
+        alert(`Next date: ${day < 10 ? "0" + day : day}.${month < 10 ? "0" + month : month}.${year}`);
+
+
     </script>
-  
 </body>
+
 </html>
